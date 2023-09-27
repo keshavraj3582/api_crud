@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qZUAAz/QZp9F9pFGgTj7kCkYLVZK/y5pM1vZsHWtauo=",
+  "Source": "web_api_crud",
+  "BasePath": "_content/web_api_crud",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
