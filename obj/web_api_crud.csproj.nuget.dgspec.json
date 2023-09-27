@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\web_api_crud\\web_api_crud.csproj": {}
+    "c:\\web_api_crud\\web_api_crud.csproj": {}
   },
   "projects": {
-    "C:\\web_api_crud\\web_api_crud.csproj": {
+    "c:\\web_api_crud\\web_api_crud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\web_api_crud\\web_api_crud.csproj",
+        "projectUniqueName": "c:\\web_api_crud\\web_api_crud.csproj",
         "projectName": "web_api_crud",
-        "projectPath": "C:\\web_api_crud\\web_api_crud.csproj",
+        "projectPath": "c:\\web_api_crud\\web_api_crud.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\web_api_crud\\obj\\",
+        "outputPath": "c:\\web_api_crud\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.11, )"
@@ -54,6 +58,10 @@
               "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
