@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using web_api_crud.Models;
 namespace web_api_crud.Controllers
 {
@@ -12,6 +13,12 @@ namespace web_api_crud.Controllers
      public StudentApiController(ApiStudentDatabaseContext context)
      {
         this.context=context;
+     }
+     [HttpGet]
+     public async Task<ActionResult<List<Student>>> GetStudents()
+     {
+        var data=await context.Students.ToListAsync();
+        return Ok(data);
      }   
     }
 

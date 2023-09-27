@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g/s2E+KsT2ZqUghh2RiyOwqSefzS57mYQBp5TBnL8CCJ23PFd3aejYJc5Rzd5DGvAd9HKDhfkqj7nBCEssFHkQ==",
+  "dgSpecHash": "dbWMT6IZ7O9ddh/i3KPzPjLK6qyetN2uLFbdSQaGRW9x6iROP8ZIxcOJNGog9Qr+jY83l2rj3IdV9thOEdBAnw==",
   "success": true,
-  "projectFilePath": "c:\\web_api_crud\\web_api_crud.csproj",
+  "projectFilePath": "C:\\web_api_crud\\web_api_crud.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
