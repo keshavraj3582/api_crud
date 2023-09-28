@@ -26,7 +26,7 @@ public partial class ApiStudentDatabaseContext : DbContext
 
     }
 
-        //=> optionsBuilder.UseSqlServer();
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
