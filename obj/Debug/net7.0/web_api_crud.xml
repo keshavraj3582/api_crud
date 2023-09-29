@@ -4,99 +4,125 @@
         <name>web_api_crud</name>
     </assembly>
     <members>
+        <member name="M:web_api_crud.Controllers.StudentApiController.GetStudents">
+            <summary>
+            Get All the Student Data
+            </summary>
+            <returns>GetStudents</returns>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.GetStudentsById(System.String)">
+            <summary>
+            Get the Particular Data Of Student by their Respective <paramref name="id"/>
+            </summary>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.CreateStudent(web_api_crud.Models.Student)">
+            <summary>
+            Create New Student With Data
+            </summary>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.UpdateStudent(System.String,web_api_crud.Models.Student)">
+            <summary>
+            Update the Data of Exsiting Student
+            </summary>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.DeleteStudent(System.String)">
+            <summary>
+            Delete Student Data By <paramref name="id"/>
+            </summary>
+        </member>
         <member name="P:web_api_crud.Models.Student.StudentId">
             <summary>
-            Student Id Enter as String (Limit 10)=> Sample Format "STDN00001"
+            Student Id Enter as String (Limit 10) Sample Format => "STDN00001"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.Gender">
             <summary>
-            Student Gender  Enter as Char (Limit 1) Sample => Format "M/F"
+            Student Gender  Enter as Char (Limit 1) Sample Format => "M/F"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.NationalIty">
             <summary>
-            Student Nationality Enter as String (Limit 50) Sample => Format "IN/KW"
+            Student Nationality Enter as String (Limit 50) Sample Format => "IN/KW"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.PlaceofBirth">
             <summary>
-            Student PlaceOfBirth Enter as String (Limit 50) Sample => Format "India/Russia"
+            Student PlaceOfBirth Enter as String (Limit 50) Sample Format => "India/Russia"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.StageId">
             <summary>
-            Student StageId Enter as String (Limit 20) Sample => Format "Lower/Level"
+            Student StageId Enter as String (Limit 20) Sample Format => "Lower/Level"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.GradeId">
             <summary>
-            Student GradeId Enter as String (Limit 10) Sample => Format "G-04"
+            Student GradeId Enter as String (Limit 10) Sample Format => "G-04"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.SectionId">
             <summary>
-            Student SectionId Enter as Char (Limit 1) Sample => Format "G-04"
+            Student SectionId Enter as Char (Limit 1) Sample Format => "G-04"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.Topic">
             <summary>
-            Student Topic Enter as Char (Limit 1) Sample => Format "A/B"
+            Student Topic Enter as Char (Limit 1) SSample Format => "A/B"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.Semester">
             <summary>
-            Student Topic Enter as String (Limit 50) Sample => Format "French/Science"
+            Student Topic Enter as String (Limit 50) Sample Format => "French/Science"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.Relation">
             <summary>
-            Student Semester Enter as Char (Limit 1) Sample => Format "S/F"
+            Student Semester Enter as Char (Limit 1) Sample Format => "S/F"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.Raisedhands">
             <summary>
-            Student Relation Enter as String (Limit 20) Sample => Format "Mother/Father"
+            Student Relation Enter as String (Limit 20) Sample Format => "Mother/Father"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.VisItedResources">
             <summary>
-            Raisedhands Enter as Int  Sample => Format "90"
+            Raisedhands Enter as Int  Sample Format => "90"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.AnnouncementsView">
             <summary>
-            VisItedResources  Enter as Int  Sample => Format "80"
+            VisItedResources  Enter as Int  Sample Format => "80"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.Discussion">
             <summary>
-            AnnouncementsView Enter as Int  Sample => Format "97"
+            AnnouncementsView Enter as Int  Sample Format => "97"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.ParentAnsweringSurvey">
             <summary>
-            Student Discussion Enter as Int  Sample => Format "70"
+            Student Discussion Enter as Int  Sample Format => "70"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.ParentschoolSatisfaction">
             <summary>
-            ParentAnsweringSurvey Enter as String (Limit 3) Sample => Format "Yes/No"
+            ParentAnsweringSurvey Enter as String (Limit 3) SSample Format => "Yes/No"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.StudentAbsenceDays">
             <summary>
-            ParentSchoolSatisfaction  Enter as Stringb  (Limit 10) Sample => Format "Good/Bad"
+            ParentSchoolSatisfaction  Enter as Stringb  (Limit 10) Sample Format => "Good/Bad"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.StudentMarks">
             <summary>
-            Student AbsenceDays Enter as String (Limit 10) Sample => Format "Under-10"
+            Student AbsenceDays Enter as String (Limit 10) Sample Format => "Under-10"
             </summary>
         </member>
         <member name="P:web_api_crud.Models.Student.Class">
             <summary>
-            Student Marks Enter as Int  Sample => Format "93"
+            Student Marks Enter as Int  Sample Format => "93"
             </summary>
         </member>
     </members>

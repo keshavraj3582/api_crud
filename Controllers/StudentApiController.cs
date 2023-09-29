@@ -14,12 +14,19 @@ namespace web_api_crud.Controllers
      {
         this.context=context;
      }
+     /// <summary>
+     /// Get All the Student Data
+     /// </summary>
+     /// <returns>GetStudents</returns>
      [HttpGet]
      public async Task<ActionResult<List<Student>>> GetStudents()
      {
         var data=await context.Students.ToListAsync();
         return Ok(data);
      } 
+      /// <summary>
+      /// Get the Particular Data Of Student by their Respective <paramref name="id"/>
+      /// </summary>
       [HttpGet("{id}")]
      public async Task<ActionResult<Student>> GetStudentsById(string id)
      {   
@@ -30,6 +37,9 @@ namespace web_api_crud.Controllers
         }
         return student;
      }
+      /// <summary>
+      /// Create New Student With Data
+      /// </summary>
       [HttpPost]
      public async Task<ActionResult<Student>> CreateStudent(Student std)
      {   
@@ -37,6 +47,9 @@ namespace web_api_crud.Controllers
         await context.SaveChangesAsync();
         return Ok(std);
      }
+      /// <summary>
+      /// Update the Data of Exsiting Student
+      /// </summary>
       [HttpPut("{id}")]
      public async Task<ActionResult<Student>> UpdateStudent(string id, Student std)
      {   
@@ -48,6 +61,9 @@ namespace web_api_crud.Controllers
         await context.SaveChangesAsync();
         return Ok(std);
      }
+     /// <summary>
+     /// Delete Student Data By <paramref name="id"/>
+     /// </summary>
       [HttpDelete("{id}")]
      public async Task<ActionResult<Student>> DeleteStudent(string id)
      {   

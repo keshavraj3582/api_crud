@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace web_api_crud.Models;
 
+
 public partial class ApiStudentDatabaseContext : DbContext
 {
     public ApiStudentDatabaseContext()
