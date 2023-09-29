@@ -79,10 +79,10 @@ namespace web_api_crud.Controllers
       [ProducesResponseType(StatusCodes.Status200OK)] // Documenting the success response
       [ProducesResponseType(StatusCodes.Status400BadRequest)] // Documenting the error response
      public async Task<ActionResult<Student>> UpdateStudent(string id, Student std)
-     {   
+     { 
         if(id!=std.StudentId)
         {
-         return BadRequest();
+         return BadRequest("Student Id not Found");
         }
         context.Entry(std).State=EntityState.Modified;
         await context.SaveChangesAsync();
@@ -104,12 +104,14 @@ namespace web_api_crud.Controllers
         var std=await context.Students.FindAsync(id);
         if(std==null)
         {
-         return NotFound();
+         return NotFound("Student Not Found");
         }
         context.Students.Remove(std);
         await context.SaveChangesAsync();
-        return Ok();
+        return Ok(std);
      }  
     }
+    //conditional class
+    
 
 }
