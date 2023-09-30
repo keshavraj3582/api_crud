@@ -24,6 +24,7 @@ namespace web_api_crud.Controllers
       [HttpGet]
       [ProducesResponseType(StatusCodes.Status200OK)] // Documenting the success response
       [ProducesResponseType(StatusCodes.Status404NotFound)] // Documenting the error response
+      [ProducesResponseType(StatusCodes.Status400BadRequest)]
      public async Task<ActionResult<List<Student>>> GetStudents()
      {
         var data=await context.Students.ToListAsync();
@@ -40,7 +41,8 @@ namespace web_api_crud.Controllers
       [HttpGet("{id}")]
       [ProducesResponseType(StatusCodes.Status200OK)] // Documenting the success response
       [ProducesResponseType(StatusCodes.Status404NotFound)] // Documenting the error response
-     public async Task<ActionResult<Student>> GetStudentsById(string id)
+      [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<Student>> GetStudentsById(string id)
      {   
         var student=await context.Students.FindAsync(id);
         if(student==null)
@@ -61,11 +63,27 @@ namespace web_api_crud.Controllers
       [ProducesResponseType(StatusCodes.Status201Created)] // Documenting the success response
       [ProducesResponseType(StatusCodes.Status400BadRequest)] // Documenting the error response
      public async Task<ActionResult<Student>> CreateStudent(Student std)
-     {   
-        await context.Students.AddAsync(std);
-        await context.SaveChangesAsync();
-        return Ok(std);
-     }
+     {
+            if (std == null)
+            {
+                return BadRequest("Invalid student data.");
+            }
+
+            try
+            {
+                await context.Students.AddAsync(std);
+                await context.SaveChangesAsync();
+                return Ok(std);
+            }
+            catch (Exception ex)
+            {
+                
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+            // await context.Students.AddAsync(std);
+            //await context.SaveChangesAsync();
+            //return Ok(std);
+        }
       /// <summary>
       /// Update the Data of Existing Student by <paramref name="id"/>
       /// </summary>
@@ -78,7 +96,8 @@ namespace web_api_crud.Controllers
       [HttpPut("{id}")]
       [ProducesResponseType(StatusCodes.Status200OK)] // Documenting the success response
       [ProducesResponseType(StatusCodes.Status400BadRequest)] // Documenting the error response
-     public async Task<ActionResult<Student>> UpdateStudent(string id, Student std)
+      [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<Student>> UpdateStudent(string id, Student std)
      { 
         if(id!=std.StudentId)
         {

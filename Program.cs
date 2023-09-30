@@ -1,7 +1,10 @@
 using web_api_crud.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using System.ComponentModel.DataAnnotations;
 using System.Net;
+using web_api_crud.CustomMiddleware;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -39,6 +42,9 @@ app.UseSwaggerUI(options=>
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseExceptionHandler("/error");
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 
 app.MapControllers();
 

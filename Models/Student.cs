@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace web_api_crud.Models;
 
@@ -8,6 +9,7 @@ public partial class Student
     /// <summary>
     /// Student Id Enter as String (Limit 10) Sample Format => "STDN00001"
     /// </summary>
+    [Required(ErrorMessage = "ID is Required")]
     public string StudentId { get; set; } = null!;
     /// <summary>
     /// Student Gender  Enter as Char (Limit 1) Sample Format => "M/F"
@@ -100,13 +102,13 @@ public partial class Student
     /// Student AbsenceDays Enter as String (Limit 10) Sample Format => "Under-10"
     /// </summary>
 
-
+    [Range(0,99)]
     public int? StudentMarks { get; set; }
     /// <summary>
     /// Student Marks Enter as Int  Sample Format => "93"
     /// </summary>
 
-
+    
     public string? Class { get; set; }
     /// <summary>
     /// Student SectionId Enter as Int  Sample Format => ""

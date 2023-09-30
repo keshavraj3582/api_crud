@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\web_api_crud\\web_api_crud.csproj": {}
+    "D:\\OneDrive\\Desktop\\tag\\web_api_crud\\web_api_crud.csproj": {}
   },
   "projects": {
-    "C:\\web_api_crud\\web_api_crud.csproj": {
+    "D:\\OneDrive\\Desktop\\tag\\web_api_crud\\web_api_crud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\web_api_crud\\web_api_crud.csproj",
+        "projectUniqueName": "D:\\OneDrive\\Desktop\\tag\\web_api_crud\\web_api_crud.csproj",
         "projectName": "web_api_crud",
-        "projectPath": "C:\\web_api_crud\\web_api_crud.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\web_api_crud\\obj\\",
+        "projectPath": "D:\\OneDrive\\Desktop\\tag\\web_api_crud\\web_api_crud.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive\\Desktop\\tag\\web_api_crud\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
