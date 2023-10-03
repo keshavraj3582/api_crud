@@ -33,7 +33,7 @@ public partial class ApiStudentDatabaseContext : DbContext
     {
         modelBuilder.Entity<Student>(entity =>
         {
-            entity.HasKey(e => e.StudentId).HasName("PK__student__A2F4E9AC8244BD15");
+            entity.HasKey(e => e.StudentId).HasName("PK__student__A2F4E9AC91E99FFE");
 
             entity.ToTable("student");
 
