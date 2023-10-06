@@ -15,7 +15,6 @@ public partial class Student
     /// <summary>
     /// Student Gender  Enter as Char (Limit 1) Sample Format => "M/F"
     /// </summary>
-    [RegularExpression("[M],[]F", ErrorMessage = "Gender Should be M or F UpperCase Only")]
     public string? Gender { get; set; }
     /// <summary>
     /// Student Nationality Enter as String (Limit 50) Sample Format => "IN/KW"
