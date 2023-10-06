@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj": {}
+    "C:\\Users\\DELL\\OneDrive - Odin Education Foundation\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj": {
+    "C:\\Users\\DELL\\OneDrive - Odin Education Foundation\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\OneDrive - Odin Education Foundation\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj",
         "projectName": "web_api_crud",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj",
+        "projectPath": "C:\\Users\\DELL\\OneDrive - Odin Education Foundation\\Desktop\\demo_project\\api_cud_tag\\web_api_crud.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\demo_project\\api_cud_tag\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\OneDrive - Odin Education Foundation\\Desktop\\demo_project\\api_cud_tag\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

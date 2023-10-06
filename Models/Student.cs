@@ -10,10 +10,12 @@ public partial class Student
     /// Student Id Enter as String (Limit 10) Sample Format => "STDN00001"
     /// </summary>
     [Required(ErrorMessage = "ID is Required")]
+    [RegularExpression("^STDN\\d{5}$", ErrorMessage = "Student ID should start with 'STDN' then 5 digits.")]
     public string StudentId { get; set; } = null!;
     /// <summary>
     /// Student Gender  Enter as Char (Limit 1) Sample Format => "M/F"
     /// </summary>
+    [RegularExpression("[M],[]F", ErrorMessage = "Gender Should be M or F UpperCase Only")]
     public string? Gender { get; set; }
     /// <summary>
     /// Student Nationality Enter as String (Limit 50) Sample Format => "IN/KW"

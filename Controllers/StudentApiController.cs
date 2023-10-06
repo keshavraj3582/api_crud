@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using web_api_crud.Models;
+
 namespace web_api_crud.Controllers
 {
 
@@ -62,6 +63,7 @@ namespace web_api_crud.Controllers
       [HttpPost]
       [ProducesResponseType(StatusCodes.Status201Created)] // Documenting the success response
       [ProducesResponseType(StatusCodes.Status400BadRequest)] // Documenting the error response
+
      public async Task<ActionResult<Student>> CreateStudent(Student std)
      {
             if (std == null)
@@ -78,7 +80,7 @@ namespace web_api_crud.Controllers
             catch (Exception ex)
             {
                 
-                return StatusCode(500, $"An error occurred: {ex.Message}");
+                return StatusCode(400, $"An error occurred : {ex.Message}");
             }
             // await context.Students.AddAsync(std);
             //await context.SaveChangesAsync();
@@ -96,7 +98,7 @@ namespace web_api_crud.Controllers
       [HttpPut("{id}")]
       [ProducesResponseType(StatusCodes.Status200OK)] // Documenting the success response
       [ProducesResponseType(StatusCodes.Status400BadRequest)] // Documenting the error response
-      [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
         public async Task<ActionResult<Student>> UpdateStudent(string id, Student std)
      { 
         if(id!=std.StudentId)

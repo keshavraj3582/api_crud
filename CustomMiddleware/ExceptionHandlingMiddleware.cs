@@ -16,7 +16,7 @@ namespace web_api_crud.CustomMiddleware
         public async Task InvokeAsync(HttpContext httpContext)
         {
             try
-            {
+            {   
                 await _next(httpContext);
             }
             catch (Exception ex)
