@@ -29,6 +29,15 @@ builder.Services.AddSwaggerGen(options=>
 builder.Services.AddDbContext<ApiStudentDatabaseContext>(options=>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("constring"));
 });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowOrigin", builder =>
+    {
+        builder.WithOrigins("http://127.0.0.1:5500") // Replace with your JavaScript origin
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
@@ -40,6 +49,8 @@ app.UseSwaggerUI(options=>
 }); 
 
 app.UseHttpsRedirection();
+app.UseRouting();
+app.UseCors("AllowOrigin");
 
 app.UseAuthorization();
 app.UseExceptionHandler("/error");
